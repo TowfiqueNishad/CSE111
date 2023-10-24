@@ -1,0 +1,14 @@
+user=input()
+alpa=0
+num=0
+for i in user:
+  if (ord(i)>=65 and ord(i)<=90) or (ord(i)>=97 and ord(i)<=122):
+    alpa+=1
+  elif ord(i)>=48 and ord(i)<=56:
+    num+=1
+if alpa>0 and num>0:
+  print("MIXED")
+elif alpa>0:
+  print("WORD")
+elif num>0:
+  print("NUMBER")
